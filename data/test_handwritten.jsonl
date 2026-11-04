@@ -1,0 +1,120 @@
+{"text": "Huge crater on the Miyapur main road near the metro station, two bikers already fell yesterday.", "department": "roads", "urgency": "high", "lang": "en", "locality": "miyapur"}
+{"text": "No drinking water in Dilsukhnagar for the past 4 days, we are buying cans.", "department": "water", "urgency": "high", "lang": "en", "locality": "dilsukhnagar"}
+{"text": "Electric cable snapped and is lying on the wet road in Ameerpet, sparks are coming!", "department": "electricity", "urgency": "critical", "lang": "en", "locality": "ameerpet"}
+{"text": "Garbage truck skipped our street in Tolichowki again this week.", "department": "garbage", "urgency": "medium", "lang": "en", "locality": "tolichowki"}
+{"text": "The streetlight outside house no. 12 in Kondapur has been flickering for a while.", "department": "streetlights", "urgency": "low", "lang": "en", "locality": "kondapur"}
+{"text": "Sewage overflowing near the Kukatpally bus stop, the whole area stinks and people are walking through dirty water.", "department": "sewerage", "urgency": "high", "lang": "en", "locality": "kukatpally"}
+{"text": "Pack of stray dogs attacked a delivery boy in Gachibowli last night, he is injured.", "department": "stray_animals", "urgency": "critical", "lang": "en", "locality": "gachibowli"}
+{"text": "Mosquitoes everywhere in Malakpet after the rains, please do fogging.", "department": "mosquito", "urgency": "medium", "lang": "en", "locality": "malakpet"}
+{"text": "Pipe leakage on the main line in Begumpet, lots of water wasting since morning.", "department": "water", "urgency": "medium", "lang": "en", "locality": "begumpet"}
+{"text": "Power has been off since 6 pm in Uppal and there is an elderly patient on oxygen at home.", "department": "electricity", "urgency": "critical", "lang": "en", "locality": "uppal"}
+{"text": "Open manhole on the road in Charminar area, very dangerous for kids.", "department": "sewerage", "urgency": "critical", "lang": "en", "locality": "charminar"}
+{"text": "The road near Nagole metro has been dug up and left like that for a month.", "department": "roads", "urgency": "high", "lang": "en", "locality": "nagole"}
+{"text": "Dead dog lying near the park gate in Jubilee Hills, smelling badly.", "department": "garbage", "urgency": "high", "lang": "en", "locality": "jubilee_hills"}
+{"text": "Our electricity bill this month is three times the usual amount.", "department": "electricity", "urgency": "low", "lang": "en", "locality": ""}
+{"text": "Monkeys have been entering apartments in Manikonda and snatching food.", "department": "stray_animals", "urgency": "medium", "lang": "en", "locality": "manikonda"}
+{"text": "Several cases of dengue reported in our apartment complex in Kokapet.", "department": "mosquito", "urgency": "high", "lang": "en", "locality": "kokapet"}
+{"text": "Drain choked with plastic and leaves in Saidabad, water not flowing.", "department": "sewerage", "urgency": "medium", "lang": "en", "locality": "saidabad"}
+{"text": "Whole street in Alwal is pitch dark, women are scared to come back from work.", "department": "streetlights", "urgency": "high", "lang": "en", "locality": "alwal"}
+{"text": "Transformer near Habsiguda X roads caught fire!", "department": "electricity", "urgency": "critical", "lang": "en", "locality": "habsiguda"}
+{"text": "Road completely broken near Shamshabad, buses are getting stuck.", "department": "roads", "urgency": "medium", "lang": "en", "locality": "shamshabad"}
+{"text": "Water coming yellow and smelly from the tap in Mehdipatnam, kids got stomach infection.", "department": "water", "urgency": "high", "lang": "en", "locality": "mehdipatnam"}
+{"text": "Debris from the building construction is blocking the footpath in Madhapur.", "department": "garbage", "urgency": "low", "lang": "en", "locality": "madhapur"}
+{"text": "Stray cows sitting on the flyover in LB Nagar, causing traffic jam.", "department": "stray_animals", "urgency": "medium", "lang": "en", "locality": "lb_nagar"}
+{"text": "Low water pressure in our lane in Nizampet, the overhead tank never fills.", "department": "water", "urgency": "medium", "lang": "en", "locality": "nizampet"}
+{"text": "Streetlights on Tarnaka main road are burning during daytime, wasting power.", "department": "streetlights", "urgency": "low", "lang": "en", "locality": "tarnaka"}
+{"text": "కూకట్‌పల్లి మెయిన్ రోడ్డు మీద పెద్ద గుంత పడింది, రాత్రి బైక్ మీద వెళ్లేవాళ్లు పడిపోతున్నారు.", "department": "roads", "urgency": "high", "lang": "te", "locality": "kukatpally"}
+{"text": "మా దిల్‌సుఖ్‌నగర్ కాలనీలో నాలుగు రోజులుగా నీళ్లు రావడం లేదు.", "department": "water", "urgency": "high", "lang": "te", "locality": "dilsukhnagar"}
+{"text": "అమీర్‌పేట్‌లో కరెంట్ తీగ తెగి నీళ్లలో పడింది, చాలా ప్రమాదం.", "department": "electricity", "urgency": "critical", "lang": "te", "locality": "ameerpet"}
+{"text": "టోలిచౌకిలో చెత్త బండి వారం నుండి రాలేదు.", "department": "garbage", "urgency": "medium", "lang": "te", "locality": "tolichowki"}
+{"text": "కొండాపూర్‌లో స్ట్రీట్ లైట్ కొన్ని రోజులుగా మినుకుమంటోంది.", "department": "streetlights", "urgency": "low", "lang": "te", "locality": "kondapur"}
+{"text": "కూకట్‌పల్లి బస్టాప్ దగ్గర డ్రైనేజీ పొంగిపొర్లుతోంది, మొత్తం దుర్వాసన.", "department": "sewerage", "urgency": "high", "lang": "te", "locality": "kukatpally"}
+{"text": "గచ్చిబౌలిలో వీధి కుక్కలు ఒక అబ్బాయిని కరిచాయి, గాయపడ్డాడు.", "department": "stray_animals", "urgency": "critical", "lang": "te", "locality": "gachibowli"}
+{"text": "వర్షాల తర్వాత మలక్‌పేట్‌లో దోమలు విపరీతంగా పెరిగాయి, ఫాగింగ్ చేయండి.", "department": "mosquito", "urgency": "medium", "lang": "te", "locality": "malakpet"}
+{"text": "బేగంపేట్‌లో మెయిన్ పైప్‌లైన్ లీక్ అవుతోంది, ఉదయం నుండి నీళ్లు వృథా.", "department": "water", "urgency": "medium", "lang": "te", "locality": "begumpet"}
+{"text": "ఉప్పల్‌లో సాయంత్రం నుండి కరెంట్ లేదు, ఇంట్లో ముసలావిడ ఆక్సిజన్ మీద ఉంది.", "department": "electricity", "urgency": "critical", "lang": "te", "locality": "uppal"}
+{"text": "చార్మినార్ దగ్గర మ్యాన్‌హోల్ మూత లేకుండా తెరిచి ఉంది, పిల్లలకు ప్రమాదం.", "department": "sewerage", "urgency": "critical", "lang": "te", "locality": "charminar"}
+{"text": "నాగోల్‌లో రోడ్డు తవ్వి నెల రోజులుగా అలాగే వదిలేశారు.", "department": "roads", "urgency": "high", "lang": "te", "locality": "nagole"}
+{"text": "జూబ్లీ హిల్స్ పార్క్ దగ్గర చచ్చిన కుక్క పడి ఉంది, భరించలేని వాసన.", "department": "garbage", "urgency": "high", "lang": "te", "locality": "jubilee_hills"}
+{"text": "ఈ నెల కరెంట్ బిల్లు మామూలు కంటే మూడు రెట్లు వచ్చింది.", "department": "electricity", "urgency": "low", "lang": "te", "locality": ""}
+{"text": "మణికొండలో కోతులు అపార్ట్‌మెంట్లలోకి దూరి తిండి ఎత్తుకెళ్తున్నాయి.", "department": "stray_animals", "urgency": "medium", "lang": "te", "locality": "manikonda"}
+{"text": "కోకాపేటలో మా అపార్ట్‌మెంట్‌లో చాలా మందికి డెంగ్యూ వచ్చింది.", "department": "mosquito", "urgency": "high", "lang": "te", "locality": "kokapet"}
+{"text": "సైదాబాద్‌లో డ్రైనేజీ ప్లాస్టిక్‌తో మూసుకుపోయింది, నీళ్లు పోవడం లేదు.", "department": "sewerage", "urgency": "medium", "lang": "te", "locality": "saidabad"}
+{"text": "అల్వాల్‌లో వీధి అంతా చీకటి, ఆడవాళ్లు రాత్రి రావడానికి భయపడుతున్నారు.", "department": "streetlights", "urgency": "high", "lang": "te", "locality": "alwal"}
+{"text": "హబ్సిగూడలో ట్రాన్స్‌ఫార్మర్‌కి మంటలు అంటుకున్నాయి!", "department": "electricity", "urgency": "critical", "lang": "te", "locality": "habsiguda"}
+{"text": "మెహదీపట్నంలో నల్లా నీళ్లు పసుపు రంగులో వస్తున్నాయి, పిల్లలకు కడుపు నొప్పి.", "department": "water", "urgency": "high", "lang": "te", "locality": "mehdipatnam"}
+{"text": "మాదాపూర్‌లో ఫుట్‌పాత్ మీద బిల్డింగ్ శిథిలాలు పోశారు.", "department": "garbage", "urgency": "low", "lang": "te", "locality": "madhapur"}
+{"text": "ఎల్బీ నగర్ ఫ్లైఓవర్ మీద ఆవులు కూర్చుని ట్రాఫిక్ జామ్ అవుతోంది.", "department": "stray_animals", "urgency": "medium", "lang": "te", "locality": "lb_nagar"}
+{"text": "నిజాంపేట్‌లో నీటి ప్రెషర్ తక్కువ, పైన ట్యాంక్ నిండడం లేదు.", "department": "water", "urgency": "medium", "lang": "te", "locality": "nizampet"}
+{"text": "తార్నాకలో పగలు కూడా వీధి దీపాలు వెలుగుతున్నాయి.", "department": "streetlights", "urgency": "low", "lang": "te", "locality": "tarnaka"}
+{"text": "మియాపూర్‌లో ఖాళీ స్థలంలో నీళ్లు నిలిచి దోమలు పెరుగుతున్నాయి.", "department": "mosquito", "urgency": "medium", "lang": "te", "locality": "miyapur"}
+{"text": "मियापुर मेट्रो के पास सड़क पर बहुत बड़ा गड्ढा है, कल दो बाइक वाले गिर गए।", "department": "roads", "urgency": "high", "lang": "hi", "locality": "miyapur"}
+{"text": "दिलसुखनगर में चार दिन से पीने का पानी नहीं आया।", "department": "water", "urgency": "high", "lang": "hi", "locality": "dilsukhnagar"}
+{"text": "अमीरपेट में बिजली का तार टूटकर गीली सड़क पर पड़ा है।", "department": "electricity", "urgency": "critical", "lang": "hi", "locality": "ameerpet"}
+{"text": "टोलीचौकी में कचरा गाड़ी इस हफ्ते फिर नहीं आई।", "department": "garbage", "urgency": "medium", "lang": "hi", "locality": "tolichowki"}
+{"text": "कोंडापुर में हमारे घर के बाहर की स्ट्रीट लाइट टिमटिमाती रहती है।", "department": "streetlights", "urgency": "low", "lang": "hi", "locality": "kondapur"}
+{"text": "कूकटपल्ली बस स्टॉप के पास नाला उफान पर है, बहुत बदबू है।", "department": "sewerage", "urgency": "high", "lang": "hi", "locality": "kukatpally"}
+{"text": "गाचीबोवली में आवारा कुत्तों ने एक डिलीवरी बॉय को काट लिया।", "department": "stray_animals", "urgency": "critical", "lang": "hi", "locality": "gachibowli"}
+{"text": "बारिश के बाद मलकपेट में मच्छर बहुत बढ़ गए हैं।", "department": "mosquito", "urgency": "medium", "lang": "hi", "locality": "malakpet"}
+{"text": "उप्पल में शाम से बिजली नहीं है, घर में बुज़ुर्ग मरीज़ ऑक्सीजन पर हैं।", "department": "electricity", "urgency": "critical", "lang": "hi", "locality": "uppal"}
+{"text": "चारमीनार के पास मैनहोल का ढक्कन गायब है, बहुत खतरनाक है।", "department": "sewerage", "urgency": "critical", "lang": "hi", "locality": "charminar"}
+{"text": "नागोल में सड़क खोदकर एक महीने से ऐसे ही छोड़ दी है।", "department": "roads", "urgency": "high", "lang": "hi", "locality": "nagole"}
+{"text": "इस महीने बिजली का बिल तीन गुना ज़्यादा आया है।", "department": "electricity", "urgency": "low", "lang": "hi", "locality": ""}
+{"text": "कोकापेट में हमारी सोसाइटी में कई लोगों को डेंगू हुआ है।", "department": "mosquito", "urgency": "high", "lang": "hi", "locality": "kokapet"}
+{"text": "सैदाबाद में नाली प्लास्टिक से जाम है, पानी आगे नहीं बह रहा।", "department": "sewerage", "urgency": "medium", "lang": "hi", "locality": "saidabad"}
+{"text": "अलवाल में पूरी गली में अंधेरा है, औरतें रात को डरती हैं।", "department": "streetlights", "urgency": "high", "lang": "hi", "locality": "alwal"}
+{"text": "हब्सीगुडा में ट्रांसफार्मर में आग लग गई है!", "department": "electricity", "urgency": "critical", "lang": "hi", "locality": "habsiguda"}
+{"text": "मेहदीपट्टनम में नल से पीला और बदबूदार पानी आ रहा है।", "department": "water", "urgency": "high", "lang": "hi", "locality": "mehdipatnam"}
+{"text": "मणिकोंडा में बंदर फ्लैटों में घुसकर खाना ले जा रहे हैं।", "department": "stray_animals", "urgency": "medium", "lang": "hi", "locality": "manikonda"}
+{"text": "बेगमपेट में मेन पाइपलाइन से पानी लीक हो रहा है।", "department": "water", "urgency": "medium", "lang": "hi", "locality": "begumpet"}
+{"text": "माधापुर में फुटपाथ पर बिल्डिंग का मलबा डाला गया है।", "department": "garbage", "urgency": "low", "lang": "hi", "locality": "madhapur"}
+{"text": "مہدی پٹنم میں نل سے گندا اور بدبودار پانی آ رہا ہے۔", "department": "water", "urgency": "high", "lang": "ur", "locality": "mehdipatnam"}
+{"text": "چارمینار کے پاس سڑک پر بہت بڑا گڑھا ہے، رات میں حادثے ہو رہے ہیں۔", "department": "roads", "urgency": "high", "lang": "ur", "locality": "charminar"}
+{"text": "ٹولی چوکی میں ایک ہفتے سے کچرا نہیں اٹھایا گیا۔", "department": "garbage", "urgency": "medium", "lang": "ur", "locality": "tolichowki"}
+{"text": "ملک پیٹ میں بجلی کا تار سڑک پر گرا ہوا ہے، بہت خطرہ ہے۔", "department": "electricity", "urgency": "critical", "lang": "ur", "locality": "malakpet"}
+{"text": "فلک نما میں نالہ ابل رہا ہے اور گندا پانی گھروں میں آ رہا ہے۔", "department": "sewerage", "urgency": "high", "lang": "ur", "locality": "falaknuma"}
+{"text": "سنتوش نگر میں آوارہ کتوں نے ایک بچے کو کاٹ لیا۔", "department": "stray_animals", "urgency": "critical", "lang": "ur", "locality": "santoshnagar"}
+{"text": "چندرائن گٹہ میں مچھروں کی بھرمار ہے، فوگنگ کروائیں۔", "department": "mosquito", "urgency": "medium", "lang": "ur", "locality": "chandrayangutta"}
+{"text": "سعید آباد میں رات کو گلی میں بالکل اندھیرا رہتا ہے۔", "department": "streetlights", "urgency": "high", "lang": "ur", "locality": "saidabad"}
+{"text": "عطا پور میں تین دن سے پانی نہیں آیا۔", "department": "water", "urgency": "high", "lang": "ur", "locality": "attapur"}
+{"text": "یہاں مین ہول کا ڈھکن ٹوٹا ہوا ہے، کوئی بھی گر سکتا ہے۔", "department": "sewerage", "urgency": "critical", "lang": "ur", "locality": ""}
+{"text": "ٹولی چوکی میں روز کئی گھنٹے بجلی کٹوتی ہوتی ہے۔", "department": "electricity", "urgency": "medium", "lang": "ur", "locality": "tolichowki"}
+{"text": "گولکنڈہ کے پاس سڑک پر مرا ہوا جانور پڑا ہے۔", "department": "garbage", "urgency": "high", "lang": "ur", "locality": "golconda"}
+{"text": "Bhai Miyapur metro ke paas road pe itna bada gaddha hai, kal 2 bike wale gir gaye.", "department": "roads", "urgency": "high", "lang": "hinglish", "locality": "miyapur"}
+{"text": "Dilsukhnagar mein 4 din se paani nahi aaya, cans khareed rahe hain.", "department": "water", "urgency": "high", "lang": "hinglish", "locality": "dilsukhnagar"}
+{"text": "Ameerpet mein bijli ka taar toot ke geeli road pe pada hai!!", "department": "electricity", "urgency": "critical", "lang": "hinglish", "locality": "ameerpet"}
+{"text": "Tolichowki mein kachra gaadi is hafte phir nahi aayi.", "department": "garbage", "urgency": "medium", "lang": "hinglish", "locality": "tolichowki"}
+{"text": "Kukatpally bus stop ke paas naala overflow ho raha hai, bahut badboo hai.", "department": "sewerage", "urgency": "high", "lang": "hinglish", "locality": "kukatpally"}
+{"text": "Gachibowli mein kutton ne delivery boy ko kaat liya, khoon nikal raha hai.", "department": "stray_animals", "urgency": "critical", "lang": "hinglish", "locality": "gachibowli"}
+{"text": "Malakpet mein baarish ke baad machhar bahut badh gaye hain.", "department": "mosquito", "urgency": "medium", "lang": "hinglish", "locality": "malakpet"}
+{"text": "Uppal mein shaam se light nahi hai, ghar mein buzurg oxygen pe hain.", "department": "electricity", "urgency": "critical", "lang": "hinglish", "locality": "uppal"}
+{"text": "Charminar ke paas manhole ka dhakkan gayab hai, bachche gir sakte hain.", "department": "sewerage", "urgency": "critical", "lang": "hinglish", "locality": "charminar"}
+{"text": "Nagole mein road khod ke ek mahine se aise hi chhod diya hai.", "department": "roads", "urgency": "high", "lang": "hinglish", "locality": "nagole"}
+{"text": "Is mahine bijli ka bill teen guna aaya hai.", "department": "electricity", "urgency": "low", "lang": "hinglish", "locality": ""}
+{"text": "Kokapet mein hamari society mein kai logon ko dengue hua hai.", "department": "mosquito", "urgency": "high", "lang": "hinglish", "locality": "kokapet"}
+{"text": "Alwal mein poori gali mein andhera hai, ladies raat ko darti hain.", "department": "streetlights", "urgency": "high", "lang": "hinglish", "locality": "alwal"}
+{"text": "Habsiguda mein transformer mein aag lag gayi hai!", "department": "electricity", "urgency": "critical", "lang": "hinglish", "locality": "habsiguda"}
+{"text": "Mehdipatnam mein nal se peela badboodar paani aa raha hai.", "department": "water", "urgency": "high", "lang": "hinglish", "locality": "mehdipatnam"}
+{"text": "Manikonda mein bandar flats mein ghus ke khana le ja rahe hain.", "department": "stray_animals", "urgency": "medium", "lang": "hinglish", "locality": "manikonda"}
+{"text": "Begumpet mein main pipeline se paani leak ho raha hai subah se.", "department": "water", "urgency": "medium", "lang": "hinglish", "locality": "begumpet"}
+{"text": "Madhapur mein footpath pe building ka malba daala hai.", "department": "garbage", "urgency": "low", "lang": "hinglish", "locality": "madhapur"}
+{"text": "Kukatpally main road meeda pedda guntha padindi, raathri bikes vallu padipothunnaru.", "department": "roads", "urgency": "high", "lang": "tenglish", "locality": "kukatpally"}
+{"text": "Maa Dilsukhnagar colony lo naalugu rojuluga neellu raavatledu.", "department": "water", "urgency": "high", "lang": "tenglish", "locality": "dilsukhnagar"}
+{"text": "Ameerpet lo current teega thegi neellalo padindi, chala danger.", "department": "electricity", "urgency": "critical", "lang": "tenglish", "locality": "ameerpet"}
+{"text": "Tolichowki lo chetta bandi vaaram nundi raaledu.", "department": "garbage", "urgency": "medium", "lang": "tenglish", "locality": "tolichowki"}
+{"text": "Kondapur lo street light konni rojuluga minukumantondi.", "department": "streetlights", "urgency": "low", "lang": "tenglish", "locality": "kondapur"}
+{"text": "Kukatpally bus stop daggara drainage pongiporluthondi, motham vaasana.", "department": "sewerage", "urgency": "high", "lang": "tenglish", "locality": "kukatpally"}
+{"text": "Gachibowli lo veedhi kukkalu oka abbayini karichayi, gaayapaddadu.", "department": "stray_animals", "urgency": "critical", "lang": "tenglish", "locality": "gachibowli"}
+{"text": "Varshala tharvatha Malakpet lo domalu vipareethanga perigayi, fogging cheyyandi.", "department": "mosquito", "urgency": "medium", "lang": "tenglish", "locality": "malakpet"}
+{"text": "Uppal lo saayantram nundi current ledu, intlo musalavida oxygen meeda undi.", "department": "electricity", "urgency": "critical", "lang": "tenglish", "locality": "uppal"}
+{"text": "Charminar daggara manhole moota lekunda therichi undi, pillalaki pramadam.", "department": "sewerage", "urgency": "critical", "lang": "tenglish", "locality": "charminar"}
+{"text": "Nagole lo road thavvi nela rojuluga alaage vadilesaru.", "department": "roads", "urgency": "high", "lang": "tenglish", "locality": "nagole"}
+{"text": "Ee nela current bill maamulu kante moodu retlu vachindi.", "department": "electricity", "urgency": "low", "lang": "tenglish", "locality": ""}
+{"text": "Manikonda lo kothulu apartments loki doori food ethukelthunnayi.", "department": "stray_animals", "urgency": "medium", "lang": "tenglish", "locality": "manikonda"}
+{"text": "Kokapet lo maa apartment lo chala mandiki dengue vachindi.", "department": "mosquito", "urgency": "high", "lang": "tenglish", "locality": "kokapet"}
+{"text": "Saidabad lo drainage plastic tho moosukupoyindi, neellu povatledu.", "department": "sewerage", "urgency": "medium", "lang": "tenglish", "locality": "saidabad"}
+{"text": "Alwal lo veedhi antha cheekati, aadavallu raathri raavadaniki bhayapaduthunnaru.", "department": "streetlights", "urgency": "high", "lang": "tenglish", "locality": "alwal"}
+{"text": "Habsiguda lo transformer ki mantalu antukunnayi!", "department": "electricity", "urgency": "critical", "lang": "tenglish", "locality": "habsiguda"}
+{"text": "Mehdipatnam lo nalla neellu pasupu rangulo vasthunnayi, pillalaki kadupu noppi.", "department": "water", "urgency": "high", "lang": "tenglish", "locality": "mehdipatnam"}
+{"text": "Nizampet lo water pressure thakkuva, paina tank nindatledu.", "department": "water", "urgency": "medium", "lang": "tenglish", "locality": "nizampet"}
+{"text": "Tarnaka lo pagalu kooda street lights veluguthunnayi.", "department": "streetlights", "urgency": "low", "lang": "tenglish", "locality": "tarnaka"}

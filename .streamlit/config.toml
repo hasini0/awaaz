@@ -1,0 +1,13 @@
+[theme]
+primaryColor = "#7c3aed"
+font = "sans serif"
+
+[client]
+toolbarMode = "viewer"     # hide the developer menu ("Deploy", rerun) from citizens and judges
+
+[server]
+maxUploadSize = 25
+fileWatcherType = "none"
+
+[browser]
+gatherUsageStats = false

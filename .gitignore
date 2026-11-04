@@ -1,0 +1,11 @@
+.venv
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+data/awaaz.db
+data/train.csv
+data/val.csv
+data/test_synthetic.csv
+# MuRIL weights are ~950 MB — too large for git; recreate with scripts/train_muril.py
+models/muril/

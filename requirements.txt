@@ -1,0 +1,22 @@
+# core ML
+torch>=2.2
+transformers>=4.44
+sentence-transformers>=3.0
+scikit-learn>=1.4
+# faster-whisper>=1.0   # optional faster CPU ASR backend
+# data / app
+numpy
+pandas
+pyyaml
+rapidfuzz
+joblib
+streamlit>=1.40
+streamlit-folium>=0.22
+folium
+plotly
+matplotlib
+seaborn
+# API
+fastapi
+uvicorn
+python-multipart

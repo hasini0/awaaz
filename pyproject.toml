@@ -1,0 +1,28 @@
+[project]
+name = "awaaz"
+version = "1.0.0"
+description = "Multilingual voice-first civic grievance chatbot (Telugu, Hindi, Urdu, English)"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "UP", "SIM", "PIE", "RET", "PL"]
+ignore = [
+  "B008",     # FastAPI's File(...) / Query(...) defaults are the framework idiom
+  "PLR0911",  # dispatchers such as ChatBot.respond read best as early returns
+  "SIM905",   # word lists are written as one string and split
+  "B905",     # zip() over columns and their contents: lengths match by construction
+  "PLC0415",  # heavy ML libraries are imported lazily on purpose
+  "PLR0913", "PLR0917", "PLR2004", "PLW0603",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"scripts/*" = ["E402"]  # scripts put the project root on sys.path before importing it
+"awaaz/synth.py" = ["E501"]  # phrase tables: one phrase per line reads better than wrapped strings

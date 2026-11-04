@@ -1,0 +1,120 @@
+# Departments Awaaz can route to. Add a department here, add training phrases
+# for it in awaaz/synth.py, retrain — nothing else in the code changes.
+departments:
+  roads:
+    name: Roads & Potholes
+    agency: GHMC Engineering Wing
+    sla_hours: 72
+    icon: "🛣️"
+    names: {te: "రోడ్లు & గుంతలు", hi: "सड़क और गड्ढे", ur: "سڑکیں اور گڑھے"}   # shown to citizens in their language
+  water:
+    name: Water Supply
+    agency: HMWSSB (Water Board)
+    sla_hours: 24
+    icon: "🚰"
+    names: {te: "నీటి సరఫరా", hi: "जल आपूर्ति", ur: "پانی کی فراہمی"}   # shown to citizens in their language
+  sewerage:
+    name: Sewerage & Drainage
+    agency: HMWSSB (Sewerage Wing)
+    sla_hours: 24
+    icon: "🕳️"
+    names: {te: "మురుగు నీరు & డ్రైనేజీ", hi: "सीवर और नाली", ur: "سیوریج اور نالی"}   # shown to citizens in their language
+  electricity:
+    name: Electricity & Power
+    agency: TGSPDCL
+    sla_hours: 12
+    icon: "⚡"
+    names: {te: "విద్యుత్", hi: "बिजली", ur: "بجلی"}   # shown to citizens in their language
+  streetlights:
+    name: Streetlights
+    agency: GHMC Electrical Wing
+    sla_hours: 48
+    icon: "💡"
+    names: {te: "వీధి దీపాలు", hi: "स्ट्रीट लाइट", ur: "اسٹریٹ لائٹ"}   # shown to citizens in their language
+  garbage:
+    name: Garbage & Sanitation
+    agency: GHMC Sanitation Wing
+    sla_hours: 24
+    icon: "🗑️"
+    names: {te: "చెత్త & పారిశుద్ధ్యం", hi: "कचरा और सफ़ाई", ur: "کچرا اور صفائی"}   # shown to citizens in their language
+  stray_animals:
+    name: Stray Animals
+    agency: GHMC Veterinary Wing
+    sla_hours: 48
+    icon: "🐕"
+    names: {te: "వీధి కుక్కలు & జంతువులు", hi: "आवारा जानवर", ur: "آوارہ جانور"}   # shown to citizens in their language
+  mosquito:
+    name: Mosquito & Public Health
+    agency: GHMC Entomology Wing
+    sla_hours: 48
+    icon: "🦟"
+    names: {te: "దోమలు & ప్రజారోగ్యం", hi: "मच्छर और जन स्वास्थ्य", ur: "مچھر اور صحت عامہ"}   # shown to citizens in their language
+
+urgency_levels:
+  # order matters: low -> critical
+  - id: low
+    label: Low
+    color: "#3b82f6"
+    weight: 1
+  - id: medium
+    label: Medium
+    color: "#eab308"
+    weight: 2
+  - id: high
+    label: High
+    color: "#f97316"
+    weight: 3
+  - id: critical
+    label: Critical
+    color: "#dc2626"
+    weight: 4
+
+# Safety rules run on top of the ML model and can only RAISE urgency, never lower it.
+# A life-safety hazard must never be missed because a model was unsure.
+safety_rules:
+  - id: electrocution
+    advice: {en: "Stay away from the wire and keep children back. Power emergency: call 1912.", te: "తీగకు దూరంగా ఉండండి, పిల్లలను దగ్గరకు రానివ్వకండి. విద్యుత్ అత్యవసరం: 1912 కు కాల్ చేయండి.", hi: "तार से दूर रहिए और बच्चों को पास न आने दीजिए। बिजली आपातकाल: 1912 पर कॉल करें।", ur: "تار سے دور رہیے اور بچوں کو قریب نہ آنے دیجیے۔ بجلی ایمرجنسی: 1912 پر کال کریں۔", tenglish: "Teega ki dooranga undandi, pillalni daggaraku raanivvakandi. Current emergency: 1912 ki call cheyyandi.", hinglish: "Taar se door rahiye aur bachchon ko paas na aane dijiye. Bijli emergency: 1912 par call karein."}
+    level: critical
+    reason: Possible electrocution hazard
+    keywords: [live wire, electric wire fallen, wire fell, wire has fallen, current wire, electric shock, got shock, sparking, sparks, short circuit, transformer blast, transformer burst,
+               current teega, current theega, chingari, nippuravvalu, teega padindi, shock vachindi, shock kottindi, current shock, current ka taar, bijli ka taar, taar gir, karant,
+               కరెంట్ తీగ, తీగ పడి, తీగలు పడి, షాక్, మెరుపులు, నిప్పురవ్వలు, ట్రాన్స్‌ఫార్మర్ పేలి,
+               करंट, बिजली का तार, तार गिर, शॉर्ट सर्किट, चिंगारी, ट्रांसफार्मर फट,
+               کرنٹ, بجلی کا تار, تار گر, شارٹ سرکٹ, چنگاری]
+  - id: fire
+    advice: {en: "Move away and call Fire Services: 101.", te: "దూరంగా వెళ్ళండి, అగ్నిమాపక సేవలకు 101 కు కాల్ చేయండి.", hi: "दूर हट जाइए और फ़ायर सर्विस को 101 पर कॉल करें।", ur: "دور ہٹ جائیے اور فائر سروس کو 101 پر کال کریں۔", tenglish: "Dooranga vellandi, fire services ki 101 ki call cheyyandi.", hinglish: "Door hat jaiye aur fire service ko 101 par call karein."}
+    level: critical
+    reason: Fire reported
+    keywords: [fire, caught fire, on fire, aag lag, aag lagi, mantalu, మంటలు, आग लग, آگ لگ]
+  - id: open_manhole
+    advice: {en: "Mark the spot with a branch or stones so nobody falls in, especially at night.", te: "ఎవరూ పడిపోకుండా ఆ చోట కొమ్మ లేదా రాళ్ళతో గుర్తు పెట్టండి, ముఖ్యంగా రాత్రి.", hi: "कोई गिर न जाए, इसलिए वहाँ टहनी या पत्थर रखकर निशान लगा दीजिए, ख़ासकर रात में।", ur: "کوئی گر نہ جائے، اس لیے وہاں ٹہنی یا پتھر رکھ کر نشان لگا دیجیے، خاص کر رات میں۔", tenglish: "Evaru padakunda aa chota komma leda raallatho gurthu pettandi, mukhyanga raatri.", hinglish: "Koi gir na jaaye, isliye wahan tehni ya patthar rakhkar nishaan laga dijiye, khaaskar raat mein."}
+    level: critical
+    reason: Open manhole / pit — fall hazard
+    keywords: [open manhole, manhole open, manhole is open, uncovered manhole, manhole lid, manhole cover missing, manhole moota, manhole khula, khula manhole,
+               మ్యాన్‌హోల్ మూత, మ్యాన్‌హోల్ తెరిచి, खुला मैनहोल, मैनहोल का ढक्कन, मैनहोल खुला, کھلا مین ہول, مین ہول کھلا, مین ہول کا ڈھکن]
+  - id: injury
+    advice: {en: "If someone is hurt, call an ambulance: 108.", te: "ఎవరైనా గాయపడితే అంబులెన్స్ కోసం 108 కు కాల్ చేయండి.", hi: "अगर कोई घायल है तो एम्बुलेंस के लिए 108 पर कॉल करें।", ur: "اگر کوئی زخمی ہے تو ایمبولینس کے لیے 108 پر کال کریں۔", tenglish: "Evaraina gaayapadithe ambulance kosam 108 ki call cheyyandi.", hinglish: "Agar koi ghayal hai to ambulance ke liye 108 par call karein."}
+    level: critical
+    reason: Injury or person in danger
+    keywords: [fell into, fallen into, injured, bleeding, accident happened, child fell, bit a child, bitten, dog bite, rabies, rabid, kaat liya, karichindi, karichayi, gaayapaddadu, gayapaddadu, gaayapaddaru,
+               # "fell" alone also describes wires and trees, so only a person falling counts
+               పడిపోయాడు, పిల్లవాడు పడ్డాడు, ఎవరో పడ్డారు, గాయపడ్డ, కరిచింది,
+               बच्चा गिर, कोई गिर गया, आदमी गिर, घायल, काट लिया, بچہ گر, کوئی گر گیا, زخمی, کاٹ لیا]
+  - id: medical_dependency
+    advice: {en: "If someone's medical equipment needs power, call 108 and 1912 now.", te: "వైద్య పరికరాల కోసం కరెంట్ అవసరమైన వారు ఉంటే వెంటనే 108 మరియు 1912 కు కాల్ చేయండి.", hi: "अगर किसी के मेडिकल उपकरण बिजली पर चलते हैं तो तुरंत 108 और 1912 पर कॉल करें।", ur: "اگر کسی کے طبی آلات بجلی پر چلتے ہیں تو فوراً 108 اور 1912 پر کال کریں۔", tenglish: "Medical equipment ki current avasaramaina vaallu unte ventane 108 mariyu 1912 ki call cheyyandi.", hinglish: "Agar kisi ke medical upkaran bijli par chalte hain to turant 108 aur 1912 par call karein."}
+    level: critical
+    reason: Someone on life support depends on this service
+    keywords: [oxygen, ventilator, dialysis, life support, oxygen concentrator,
+               ఆక్సిజన్, వెంటిలేటర్, డయాలసిస్, ऑक्सीजन, वेंटिलेटर, डायलिसिस, آکسیجن, وینٹی لیٹر, ڈائیلاسز]
+  - id: contamination
+    advice: {en: "Do not drink this water; boil water before use until it is fixed.", te: "ఈ నీటిని తాగకండి; సరి అయ్యే వరకు నీటిని మరిగించి వాడండి.", hi: "यह पानी मत पीजिए; ठीक होने तक पानी उबालकर इस्तेमाल करें।", ur: "یہ پانی مت پیجیے؛ ٹھیک ہونے تک پانی ابال کر استعمال کریں۔", tenglish: "Ee neellu thaagakandi; sari ayye varaku neellu marigichi vaadandi.", hinglish: "Yeh paani mat pijiye; theek hone tak paani ubaalkar istemaal karein."}
+    level: high
+    reason: Contaminated drinking water — health risk
+    keywords: [sewage mixing, drainage water mixing, dirty water in tap, contaminated water, smelly water, yellow water, worms in water, mixed with sewage,
+               ganda paani, gandha neellu, murikineeru, మురికి నీళ్లు, మురుగు నీరు కలుస్తోంది, గంధం నీళ్లు, गंदा पानी, सीवेज मिल, گندا پانی]
+  - id: disease
+    advice: {en: "Use mosquito nets and see a doctor if anyone has fever. Health helpline: 104.", te: "దోమతెరలు వాడండి, జ్వరం ఉంటే డాక్టర్‌ను కలవండి. ఆరోగ్య హెల్ప్‌లైన్: 104.", hi: "मच्छरदानी इस्तेमाल करें और बुख़ार हो तो डॉक्टर को दिखाएँ। स्वास्थ्य हेल्पलाइन: 104।", ur: "مچھر دانی استعمال کریں اور بخار ہو تو ڈاکٹر کو دکھائیں۔ ہیلتھ ہیلپ لائن: 104۔", tenglish: "Domatheralu vaadandi, jwaram unte doctor ni kalavandi. Health helpline: 104.", hinglish: "Machhardaani istemaal karein aur bukhar ho to doctor ko dikhaiye. Health helpline: 104."}
+    level: high
+    reason: Possible disease outbreak
+    keywords: [dengue, malaria, typhoid, cholera, diarrhoea, diarrhea, vomiting, fever cases, jwaram, bukhar,
+               డెంగ్యూ, మలేరియా, జ్వరాలు, విరేచనాలు, डेंगू, मलेरिया, बुखार, उल्टी-दस्त, ڈینگی, ملیریا, بخار]

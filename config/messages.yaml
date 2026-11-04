@@ -1,0 +1,97 @@
+# What the chatbot says, per language. Add a language by adding a block; missing keys fall back
+# through `fallback` (romanised Telugu/Hindi -> English). Placeholders are filled by awaaz/chat.py.
+fallback: {tenglish: en, hinglish: en}
+
+en:
+  greet: "Hello! 🙏 I'm Awaaz. Tell me your civic problem by typing or by voice — in Telugu, Hindi, Urdu or English — and say where it is. To check a complaint, send your ticket number."
+  ask_location: "Where is this problem? Please tell me the area name (for example: Kukatpally)."
+  ask_location_again: "I couldn't find that area. Please send the locality name, e.g. Ameerpet, Charminar or LB Nagar."
+  clarify: "To send this to the right team — is it about:\n1️⃣ {a}\n2️⃣ {b}\nPlease reply 1 or 2."
+  filed: "✅ Complaint registered.\n🎫 Ticket: {id}\n🏛️ Sent to: {dept} · {agency}\n⏱️ Urgency: {urgency} · action target {sla} hours"
+  merged: "👥 {n} people have reported this same problem nearby. We combined the reports so it gets higher priority."
+  no_location: "ℹ️ No exact location yet — an officer will verify it."
+  safety: "⚠️ Safety first: {advice}"
+  status: "🎫 {id}: {status}\n{dept} · {where} · filed {age} hours ago"
+  not_found: "I couldn't find ticket {id}. Please check the number."
+  unheard: "Sorry, I couldn't hear that clearly. Please try again or type your complaint."
+  statuses: {open: "Registered — waiting for action", in_progress: "Work in progress 🛠️", resolved: "Resolved ✅"}
+  urgency: {low: Low, medium: Medium, high: High, critical: "Critical 🔴"}
+  unknown_place: "location not given"
+
+te:
+  greet: "నమస్కారం! 🙏 నేను ఆవాజ్. మీ సమస్యను తెలుగు, హిందీ, ఉర్దూ లేదా ఇంగ్లీష్‌లో టైప్ చేయండి లేదా మాట్లాడండి — ఎక్కడ ఉందో కూడా చెప్పండి. ఫిర్యాదు స్థితి కోసం మీ టికెట్ నంబర్ పంపండి."
+  ask_location: "ఈ సమస్య ఎక్కడ ఉంది? దయచేసి ప్రాంతం పేరు చెప్పండి (ఉదా: కూకట్‌పల్లి)."
+  ask_location_again: "ఆ ప్రాంతం దొరకలేదు. దయచేసి ప్రాంతం పేరు పంపండి, ఉదా: అమీర్‌పేట్, చార్మినార్ లేదా ఎల్‌బీ నగర్."
+  clarify: "సరైన విభాగానికి పంపడానికి — ఇది దేని గురించి?\n1️⃣ {a}\n2️⃣ {b}\nదయచేసి 1 లేదా 2 అని పంపండి."
+  filed: "✅ మీ ఫిర్యాదు నమోదైంది.\n🎫 టికెట్: {id}\n🏛️ పంపిన విభాగం: {dept} · {agency}\n⏱️ అత్యవసరత: {urgency} · {sla} గంటల్లో చర్య లక్ష్యం"
+  merged: "👥 ఇదే సమస్యను సమీపంలో {n} మంది ఫిర్యాదు చేశారు. అన్నింటినీ కలిపి ప్రాధాన్యత పెంచాము."
+  no_location: "ℹ️ ఖచ్చితమైన ప్రాంతం తెలియలేదు — ఒక అధికారి పరిశీలిస్తారు."
+  safety: "⚠️ జాగ్రత్త: {advice}"
+  status: "🎫 {id}: {status}\n{dept} · {where} · {age} గంటల క్రితం నమోదైంది"
+  not_found: "టికెట్ {id} దొరకలేదు. దయచేసి నంబర్ మళ్ళీ చూడండి."
+  unheard: "క్షమించండి, స్పష్టంగా వినబడలేదు. దయచేసి మళ్ళీ చెప్పండి లేదా టైప్ చేయండి."
+  statuses: {open: "నమోదైంది — చర్య కోసం వేచి ఉంది", in_progress: "పని జరుగుతోంది 🛠️", resolved: "పరిష్కరించబడింది ✅"}
+  urgency: {low: తక్కువ, medium: మధ్యస్థం, high: ఎక్కువ, critical: "అత్యవసరం 🔴"}
+  unknown_place: "ప్రాంతం తెలియదు"
+
+hi:
+  greet: "नमस्ते! 🙏 मैं आवाज़ हूँ। अपनी समस्या तेलुगु, हिंदी, उर्दू या अंग्रेज़ी में लिखिए या बोलिए — और बताइए कि कहाँ है। शिकायत की स्थिति जानने के लिए अपना टिकट नंबर भेजिए।"
+  ask_location: "यह समस्या कहाँ है? कृपया इलाके का नाम बताइए (जैसे: कूकटपल्ली)।"
+  ask_location_again: "वह इलाका नहीं मिला। कृपया इलाके का नाम भेजिए, जैसे: अमीरपेट, चारमीनार या एलबी नगर।"
+  clarify: "सही विभाग तक भेजने के लिए — यह किस बारे में है?\n1️⃣ {a}\n2️⃣ {b}\nकृपया 1 या 2 भेजिए।"
+  filed: "✅ आपकी शिकायत दर्ज हो गई है।\n🎫 टिकट: {id}\n🏛️ विभाग: {dept} · {agency}\n⏱️ प्राथमिकता: {urgency} · {sla} घंटों में कार्रवाई का लक्ष्य"
+  merged: "👥 पास में {n} लोगों ने यही समस्या बताई है। सबको जोड़कर प्राथमिकता बढ़ा दी गई है।"
+  no_location: "ℹ️ सही जगह अभी पता नहीं — एक अधिकारी इसकी जाँच करेंगे।"
+  safety: "⚠️ सावधानी: {advice}"
+  status: "🎫 {id}: {status}\n{dept} · {where} · {age} घंटे पहले दर्ज हुई"
+  not_found: "टिकट {id} नहीं मिला। कृपया नंबर दोबारा देखिए।"
+  unheard: "माफ़ कीजिए, साफ़ सुनाई नहीं दिया। कृपया दोबारा बोलिए या लिखिए।"
+  statuses: {open: "दर्ज — कार्रवाई की प्रतीक्षा", in_progress: "काम चल रहा है 🛠️", resolved: "हल हो गई ✅"}
+  urgency: {low: कम, medium: मध्यम, high: ज़्यादा, critical: "अति आवश्यक 🔴"}
+  unknown_place: "जगह नहीं बताई गई"
+
+ur:
+  greet: "آداب! 🙏 میں آواز ہوں۔ اپنا مسئلہ تیلگو، ہندی، اردو یا انگریزی میں لکھیے یا بولیے — اور بتائیے کہ کہاں ہے۔ شکایت کی صورتحال جاننے کے لیے اپنا ٹکٹ نمبر بھیجیے۔"
+  ask_location: "یہ مسئلہ کہاں ہے؟ براہ کرم علاقے کا نام بتائیے (جیسے: کوکٹ پلی)۔"
+  ask_location_again: "وہ علاقہ نہیں ملا۔ براہ کرم علاقے کا نام بھیجیے، جیسے: امیرپیٹ، چارمینار یا ایل بی نگر۔"
+  clarify: "صحیح محکمے تک بھیجنے کے لیے — یہ کس بارے میں ہے؟\n1️⃣ {a}\n2️⃣ {b}\nبراہ کرم 1 یا 2 بھیجیے۔"
+  filed: "✅ آپ کی شکایت درج ہو گئی ہے۔\n🎫 ٹکٹ: {id}\n🏛️ محکمہ: {dept} · {agency}\n⏱️ ترجیح: {urgency} · {sla} گھنٹوں میں کارروائی کا ہدف"
+  merged: "👥 قریب میں {n} لوگوں نے یہی مسئلہ بتایا ہے۔ سب کو جوڑ کر ترجیح بڑھا دی گئی ہے۔"
+  no_location: "ℹ️ صحیح جگہ ابھی معلوم نہیں — ایک افسر اس کی جانچ کریں گے۔"
+  safety: "⚠️ احتیاط: {advice}"
+  status: "🎫 {id}: {status}\n{dept} · {where} · {age} گھنٹے پہلے درج ہوئی"
+  not_found: "ٹکٹ {id} نہیں ملا۔ براہ کرم نمبر دوبارہ دیکھیے۔"
+  unheard: "معاف کیجیے، صاف سنائی نہیں دیا۔ براہ کرم دوبارہ بولیے یا لکھیے۔"
+  statuses: {open: "درج — کارروائی کا انتظار", in_progress: "کام جاری ہے 🛠️", resolved: "حل ہو گئی ✅"}
+  urgency: {low: کم, medium: درمیانی, high: زیادہ, critical: "انتہائی ضروری 🔴"}
+  unknown_place: "جگہ نہیں بتائی گئی"
+
+tenglish:
+  greet: "Namaskaram! 🙏 Nenu Awaaz. Mee samasya Telugu, Hindi, Urdu leda English lo type cheyyandi leda matladandi — ekkada undo kooda cheppandi. Complaint status kosam mee ticket number pampandi."
+  ask_location: "Ee samasya ekkada undi? Dayachesi area peru cheppandi (udaharanaki: Kukatpally)."
+  ask_location_again: "Aa area dorakaledu. Dayachesi area peru pampandi, udaharanaki: Ameerpet, Charminar leda LB Nagar."
+  clarify: "Correct department ki pampadaniki — idi deni gurinchi?\n1️⃣ {a}\n2️⃣ {b}\nDayachesi 1 leda 2 pampandi."
+  filed: "✅ Mee complaint register ayindi.\n🎫 Ticket: {id}\n🏛️ Department: {dept} · {agency}\n⏱️ Urgency: {urgency} · {sla} gantallo action target"
+  merged: "👥 Ide samasya ni daggarlo {n} mandi report chesaru. Anni kalipi priority penchamu."
+  no_location: "ℹ️ Correct area inka teliyaledu — oka officer check chestaru."
+  safety: "⚠️ Jagratta: {advice}"
+  status: "🎫 {id}: {status}\n{dept} · {where} · {age} gantala kritam register ayindi"
+  not_found: "Ticket {id} dorakaledu. Dayachesi number malli chudandi."
+  unheard: "Sorry, clear ga vinapadaledu. Malli cheppandi leda type cheyyandi."
+  statuses: {open: "Register ayindi — action kosam waiting", in_progress: "Pani jarugutondi 🛠️", resolved: "Solve ayindi ✅"}
+  unknown_place: "area cheppaledu"
+
+hinglish:
+  greet: "Namaste! 🙏 Main Awaaz hoon. Apni samasya Telugu, Hindi, Urdu ya English mein likhiye ya boliye — aur bataiye kahan hai. Status jaanne ke liye apna ticket number bhejiye."
+  ask_location: "Yeh samasya kahan hai? Kripya area ka naam bataiye (jaise: Kukatpally)."
+  ask_location_again: "Woh area nahi mila. Kripya area ka naam bhejiye, jaise: Ameerpet, Charminar ya LB Nagar."
+  clarify: "Sahi department tak bhejne ke liye — yeh kis baare mein hai?\n1️⃣ {a}\n2️⃣ {b}\nKripya 1 ya 2 bhejiye."
+  filed: "✅ Aapki shikayat darj ho gayi hai.\n🎫 Ticket: {id}\n🏛️ Department: {dept} · {agency}\n⏱️ Urgency: {urgency} · {sla} ghante mein action ka target"
+  merged: "👥 Paas mein {n} logon ne yahi samasya batayi hai. Sabko jodkar priority badha di gayi hai."
+  no_location: "ℹ️ Sahi jagah abhi pata nahi — ek officer jaanch karenge."
+  safety: "⚠️ Savdhaani: {advice}"
+  status: "🎫 {id}: {status}\n{dept} · {where} · {age} ghante pehle darj hui"
+  not_found: "Ticket {id} nahi mila. Kripya number dobara dekhiye."
+  unheard: "Maaf kijiye, saaf sunai nahi diya. Dobara boliye ya likhiye."
+  statuses: {open: "Darj — action ka intezaar", in_progress: "Kaam chal raha hai 🛠️", resolved: "Hal ho gayi ✅"}
+  unknown_place: "jagah nahi batayi"

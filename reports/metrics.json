@@ -1,0 +1,717 @@
+{
+  "data": {
+    "train": 8000,
+    "val": 1000,
+    "test_synthetic": 2000,
+    "test_handwritten": 120,
+    "languages": [
+      "en",
+      "hi",
+      "hinglish",
+      "te",
+      "tenglish",
+      "ur"
+    ],
+    "departments": [
+      "electricity",
+      "garbage",
+      "mosquito",
+      "roads",
+      "sewerage",
+      "stray_animals",
+      "streetlights",
+      "water"
+    ]
+  },
+  "models": {
+    "muril": {
+      "display": "MuRIL fine-tuned (multi-task)",
+      "train_seconds": 1087,
+      "calibration": {
+        "temperature_dept": 0.075,
+        "temperature_urg": 0.104,
+        "ece_dept_before": 0.7344,
+        "ece_dept_after": 0.0306,
+        "ece_urg_before": 0.376,
+        "ece_urg_after": 0.1271
+      },
+      "val": {
+        "n": 1000,
+        "dept_accuracy": 0.998,
+        "dept_macro_f1": 0.9979729847784875,
+        "urg_macro_f1_model_only": 0.9542760094917334,
+        "urg_macro_f1": 0.9542760094917334,
+        "urg_accuracy": 0.953,
+        "urg_within_one_level": 1.0,
+        "critical_recall": 1.0,
+        "critical_precision": 1.0,
+        "under_triage_rate": 0.042,
+        "per_language": {
+          "en": {
+            "n": 173,
+            "dept_macro_f1": 0.9953997992639679,
+            "urg_macro_f1": 0.9350035519390358
+          },
+          "hi": {
+            "n": 174,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.9779202279202279
+          },
+          "hinglish": {
+            "n": 173,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.9669793621013134
+          },
+          "te": {
+            "n": 177,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.9609195402298851
+          },
+          "tenglish": {
+            "n": 158,
+            "dept_macro_f1": 0.9939024390243902,
+            "urg_macro_f1": 0.9256264507648853
+          },
+          "ur": {
+            "n": 145,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.9640444214876033
+          }
+        }
+      },
+      "synthetic_unseen_phrasing": {
+        "n": 2000,
+        "dept_accuracy": 0.9635,
+        "dept_macro_f1": 0.9662725192713133,
+        "urg_macro_f1_model_only": 0.7175817509446502,
+        "urg_macro_f1": 0.7601932516824536,
+        "urg_accuracy": 0.8115,
+        "urg_within_one_level": 0.9905,
+        "critical_recall": 0.6402439024390244,
+        "critical_precision": 0.9905660377358491,
+        "under_triage_rate": 0.068,
+        "per_language": {
+          "en": {
+            "n": 464,
+            "dept_macro_f1": 0.9946115234227733,
+            "urg_macro_f1": 0.7763819705758457
+          },
+          "hi": {
+            "n": 370,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.7589661117923793
+          },
+          "hinglish": {
+            "n": 248,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.7983292673911436
+          },
+          "te": {
+            "n": 409,
+            "dept_macro_f1": 0.8993650457072848,
+            "urg_macro_f1": 0.8346631205673759
+          },
+          "tenglish": {
+            "n": 268,
+            "dept_macro_f1": 0.835927960927961,
+            "urg_macro_f1": 0.6965614597973968
+          },
+          "ur": {
+            "n": 241,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.7589154487925929
+          }
+        }
+      },
+      "handwritten": {
+        "n": 120,
+        "dept_accuracy": 0.9333333333333333,
+        "dept_macro_f1": 0.9232590395198155,
+        "urg_macro_f1_model_only": 0.6807168600730363,
+        "urg_macro_f1": 0.7459664106572768,
+        "urg_accuracy": 0.7666666666666667,
+        "urg_within_one_level": 1.0,
+        "critical_recall": 1.0,
+        "critical_precision": 0.9655172413793104,
+        "under_triage_rate": 0.041666666666666664,
+        "per_language": {
+          "en": {
+            "n": 25,
+            "dept_macro_f1": 0.8633928571428571,
+            "urg_macro_f1": 0.6508021390374332
+          },
+          "hi": {
+            "n": 20,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.7113636363636363
+          },
+          "hinglish": {
+            "n": 18,
+            "dept_macro_f1": 0.9333333333333333,
+            "urg_macro_f1": 0.5611111111111111
+          },
+          "te": {
+            "n": 25,
+            "dept_macro_f1": 0.8589285714285714,
+            "urg_macro_f1": 0.7913533834586466
+          },
+          "tenglish": {
+            "n": 20,
+            "dept_macro_f1": 0.95,
+            "urg_macro_f1": 0.8
+          },
+          "ur": {
+            "n": 12,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 1.0
+          }
+        }
+      },
+      "latency_ms_per_complaint": 54.9
+    },
+    "tfidf": {
+      "display": "TF-IDF + LogReg (baseline)",
+      "val": {
+        "n": 1000,
+        "dept_accuracy": 1.0,
+        "dept_macro_f1": 1.0,
+        "urg_macro_f1_model_only": 0.9576619362691046,
+        "urg_macro_f1": 0.9576619362691046,
+        "urg_accuracy": 0.953,
+        "urg_within_one_level": 1.0,
+        "critical_recall": 1.0,
+        "critical_precision": 1.0,
+        "under_triage_rate": 0.042,
+        "per_language": {
+          "en": {
+            "n": 173,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.9591242091242091
+          },
+          "hi": {
+            "n": 174,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.977817866366988
+          },
+          "hinglish": {
+            "n": 173,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.9708186231244483
+          },
+          "te": {
+            "n": 177,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.9532840722495896
+          },
+          "tenglish": {
+            "n": 158,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.9289843714506384
+          },
+          "ur": {
+            "n": 145,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.9592838654012079
+          }
+        }
+      },
+      "synthetic_unseen_phrasing": {
+        "n": 2000,
+        "dept_accuracy": 0.7115,
+        "dept_macro_f1": 0.7165967280991441,
+        "urg_macro_f1_model_only": 0.32779131751030954,
+        "urg_macro_f1": 0.5246990103616993,
+        "urg_accuracy": 0.593,
+        "urg_within_one_level": 0.9645,
+        "critical_recall": 0.5914634146341463,
+        "critical_precision": 0.9603960396039604,
+        "under_triage_rate": 0.196,
+        "per_language": {
+          "en": {
+            "n": 464,
+            "dept_macro_f1": 0.855995014879247,
+            "urg_macro_f1": 0.5673348432229045
+          },
+          "hi": {
+            "n": 370,
+            "dept_macro_f1": 0.5781047025832898,
+            "urg_macro_f1": 0.39317818417910627
+          },
+          "hinglish": {
+            "n": 248,
+            "dept_macro_f1": 0.6435095912276441,
+            "urg_macro_f1": 0.3547434477667036
+          },
+          "te": {
+            "n": 409,
+            "dept_macro_f1": 0.5305754286709484,
+            "urg_macro_f1": 0.5626436781609195
+          },
+          "tenglish": {
+            "n": 268,
+            "dept_macro_f1": 0.9842892013864337,
+            "urg_macro_f1": 0.5769460322476533
+          },
+          "ur": {
+            "n": 241,
+            "dept_macro_f1": 0.4956522681932518,
+            "urg_macro_f1": 0.35306361616903675
+          }
+        }
+      },
+      "handwritten": {
+        "n": 120,
+        "dept_accuracy": 0.9583333333333334,
+        "dept_macro_f1": 0.9529532645293515,
+        "urg_macro_f1_model_only": 0.6205584809886382,
+        "urg_macro_f1": 0.6974538619275461,
+        "urg_accuracy": 0.7083333333333334,
+        "urg_within_one_level": 0.9916666666666667,
+        "critical_recall": 1.0,
+        "critical_precision": 0.9655172413793104,
+        "under_triage_rate": 0.10833333333333334,
+        "per_language": {
+          "en": {
+            "n": 25,
+            "dept_macro_f1": 0.9571428571428571,
+            "urg_macro_f1": 0.7078947368421051
+          },
+          "hi": {
+            "n": 20,
+            "dept_macro_f1": 0.9333333333333333,
+            "urg_macro_f1": 0.5499999999999999
+          },
+          "hinglish": {
+            "n": 18,
+            "dept_macro_f1": 0.9333333333333333,
+            "urg_macro_f1": 0.7063492063492063
+          },
+          "te": {
+            "n": 25,
+            "dept_macro_f1": 0.9057539682539683,
+            "urg_macro_f1": 0.767361111111111
+          },
+          "tenglish": {
+            "n": 20,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.7559523809523809
+          },
+          "ur": {
+            "n": 12,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.5786435786435786
+          }
+        }
+      },
+      "latency_ms_per_complaint": 0.7
+    },
+    "embed": {
+      "display": "multilingual-e5 + LogReg",
+      "val": {
+        "n": 1000,
+        "dept_accuracy": 0.993,
+        "dept_macro_f1": 0.9932169834471168,
+        "urg_macro_f1_model_only": 0.8570171462611837,
+        "urg_macro_f1": 0.858284548364032,
+        "urg_accuracy": 0.841,
+        "urg_within_one_level": 0.99,
+        "critical_recall": 1.0,
+        "critical_precision": 0.9457364341085271,
+        "under_triage_rate": 0.1,
+        "per_language": {
+          "en": {
+            "n": 173,
+            "dept_macro_f1": 0.9945420028476507,
+            "urg_macro_f1": 0.9033447079665667
+          },
+          "hi": {
+            "n": 174,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.8988895398669835
+          },
+          "hinglish": {
+            "n": 173,
+            "dept_macro_f1": 0.9774507101936891,
+            "urg_macro_f1": 0.8374328958422279
+          },
+          "te": {
+            "n": 177,
+            "dept_macro_f1": 0.9935897435897436,
+            "urg_macro_f1": 0.8293589995169666
+          },
+          "tenglish": {
+            "n": 158,
+            "dept_macro_f1": 0.9941706412294647,
+            "urg_macro_f1": 0.7754798121189498
+          },
+          "ur": {
+            "n": 145,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.9073333333333333
+          }
+        }
+      },
+      "synthetic_unseen_phrasing": {
+        "n": 2000,
+        "dept_accuracy": 0.886,
+        "dept_macro_f1": 0.8913001746961258,
+        "urg_macro_f1_model_only": 0.6059233132364961,
+        "urg_macro_f1": 0.6535913929698899,
+        "urg_accuracy": 0.689,
+        "urg_within_one_level": 0.97,
+        "critical_recall": 0.6341463414634146,
+        "critical_precision": 0.6380368098159509,
+        "under_triage_rate": 0.167,
+        "per_language": {
+          "en": {
+            "n": 464,
+            "dept_macro_f1": 0.9929881467993966,
+            "urg_macro_f1": 0.7652162286612872
+          },
+          "hi": {
+            "n": 370,
+            "dept_macro_f1": 0.9788336769342711,
+            "urg_macro_f1": 0.7562809850396083
+          },
+          "hinglish": {
+            "n": 248,
+            "dept_macro_f1": 0.6871889423639099,
+            "urg_macro_f1": 0.23664597733577847
+          },
+          "te": {
+            "n": 409,
+            "dept_macro_f1": 0.7506356853495921,
+            "urg_macro_f1": 0.6394010261579434
+          },
+          "tenglish": {
+            "n": 268,
+            "dept_macro_f1": 0.6909191264882322,
+            "urg_macro_f1": 0.5703541717068731
+          },
+          "ur": {
+            "n": 241,
+            "dept_macro_f1": 0.9749096748293857,
+            "urg_macro_f1": 0.7724105163129553
+          }
+        }
+      },
+      "handwritten": {
+        "n": 120,
+        "dept_accuracy": 0.8833333333333333,
+        "dept_macro_f1": 0.8861503548267223,
+        "urg_macro_f1_model_only": 0.6135990750071053,
+        "urg_macro_f1": 0.6827806192597481,
+        "urg_accuracy": 0.6916666666666667,
+        "urg_within_one_level": 0.95,
+        "critical_recall": 1.0,
+        "critical_precision": 0.7368421052631579,
+        "under_triage_rate": 0.075,
+        "per_language": {
+          "en": {
+            "n": 25,
+            "dept_macro_f1": 0.9571428571428572,
+            "urg_macro_f1": 0.7081865502918134
+          },
+          "hi": {
+            "n": 20,
+            "dept_macro_f1": 0.961111111111111,
+            "urg_macro_f1": 0.6601648351648353
+          },
+          "hinglish": {
+            "n": 18,
+            "dept_macro_f1": 0.8833333333333333,
+            "urg_macro_f1": 0.6840909090909091
+          },
+          "te": {
+            "n": 25,
+            "dept_macro_f1": 0.861904761904762,
+            "urg_macro_f1": 0.5504807692307692
+          },
+          "tenglish": {
+            "n": 20,
+            "dept_macro_f1": 0.6652777777777779,
+            "urg_macro_f1": 0.7788461538461539
+          },
+          "ur": {
+            "n": 12,
+            "dept_macro_f1": 0.9333333333333333,
+            "urg_macro_f1": 0.7857142857142857
+          }
+        }
+      },
+      "latency_ms_per_complaint": 16.8
+    },
+    "ensemble": {
+      "display": "Ensemble: TF-IDF + e5",
+      "val": {
+        "n": 1000,
+        "dept_accuracy": 0.999,
+        "dept_macro_f1": 0.9991026377977901,
+        "urg_macro_f1_model_only": 0.9521500436097146,
+        "urg_macro_f1": 0.9521500436097146,
+        "urg_accuracy": 0.947,
+        "urg_within_one_level": 1.0,
+        "critical_recall": 1.0,
+        "critical_precision": 0.991869918699187,
+        "under_triage_rate": 0.044,
+        "per_language": {
+          "en": {
+            "n": 173,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.9588720103425986
+          },
+          "hi": {
+            "n": 174,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.9640217256554888
+          },
+          "hinglish": {
+            "n": 173,
+            "dept_macro_f1": 0.9949819349658771,
+            "urg_macro_f1": 0.9669793621013134
+          },
+          "te": {
+            "n": 177,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.9532840722495896
+          },
+          "tenglish": {
+            "n": 158,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.9059094461779693
+          },
+          "ur": {
+            "n": 145,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.9592838654012079
+          }
+        }
+      },
+      "synthetic_unseen_phrasing": {
+        "n": 2000,
+        "dept_accuracy": 0.917,
+        "dept_macro_f1": 0.9217502846913767,
+        "urg_macro_f1_model_only": 0.5190531472559399,
+        "urg_macro_f1": 0.6337268420036898,
+        "urg_accuracy": 0.6685,
+        "urg_within_one_level": 0.9765,
+        "critical_recall": 0.6036585365853658,
+        "critical_precision": 0.8918918918918919,
+        "under_triage_rate": 0.153,
+        "per_language": {
+          "en": {
+            "n": 464,
+            "dept_macro_f1": 0.9911493456092769,
+            "urg_macro_f1": 0.7440855485924761
+          },
+          "hi": {
+            "n": 370,
+            "dept_macro_f1": 0.9847964820929642,
+            "urg_macro_f1": 0.5895447323465817
+          },
+          "hinglish": {
+            "n": 248,
+            "dept_macro_f1": 0.7698495261905508,
+            "urg_macro_f1": 0.29462848428365673
+          },
+          "te": {
+            "n": 409,
+            "dept_macro_f1": 0.8140814912330679,
+            "urg_macro_f1": 0.7198088825190235
+          },
+          "tenglish": {
+            "n": 268,
+            "dept_macro_f1": 0.8496420246420247,
+            "urg_macro_f1": 0.5907450425255368
+          },
+          "ur": {
+            "n": 241,
+            "dept_macro_f1": 0.9700916051408258,
+            "urg_macro_f1": 0.5951025629311527
+          }
+        }
+      },
+      "handwritten": {
+        "n": 120,
+        "dept_accuracy": 0.95,
+        "dept_macro_f1": 0.950311349834376,
+        "urg_macro_f1_model_only": 0.6851075447613044,
+        "urg_macro_f1": 0.7631812065581638,
+        "urg_accuracy": 0.7583333333333333,
+        "urg_within_one_level": 0.9916666666666667,
+        "critical_recall": 1.0,
+        "critical_precision": 0.9655172413793104,
+        "under_triage_rate": 0.075,
+        "per_language": {
+          "en": {
+            "n": 25,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.7266599821746881
+          },
+          "hi": {
+            "n": 20,
+            "dept_macro_f1": 1.0,
+            "urg_macro_f1": 0.543956043956044
+          },
+          "hinglish": {
+            "n": 18,
+            "dept_macro_f1": 0.8833333333333333,
+            "urg_macro_f1": 0.7649572649572649
+          },
+          "te": {
+            "n": 25,
+            "dept_macro_f1": 0.9253968253968254,
+            "urg_macro_f1": 0.767361111111111
+          },
+          "tenglish": {
+            "n": 20,
+            "dept_macro_f1": 0.95,
+            "urg_macro_f1": 0.9142857142857144
+          },
+          "ur": {
+            "n": 12,
+            "dept_macro_f1": 0.9333333333333333,
+            "urg_macro_f1": 0.7857142857142857
+          }
+        }
+      },
+      "latency_ms_per_complaint": 17.9
+    }
+  },
+  "voice": {
+    "clips": 10,
+    "language_id_accuracy": 1.0,
+    "department_accuracy": 1.0,
+    "locality_accuracy": 1.0,
+    "mean_asr_seconds": 11.89,
+    "asr_model": "openai/whisper-small",
+    "asr_overrides": {
+      "te": {
+        "model": "vasista22/whisper-telugu-small"
+      }
+    },
+    "details": [
+      {
+        "clip": "hi_sewage_kukatpally.wav",
+        "heard": "कुकत पली बस श्टोप के पास नाला उठान पर है, पुरी सर्ट पर गंदा पानी बह रहा है",
+        "asr_seconds": 10.79,
+        "language_ok": true,
+        "department_ok": true,
+        "locality_ok": true,
+        "urgency": "high"
+      },
+      {
+        "clip": "hi_live_wire_ameerpet.wav",
+        "heard": "अमीर पिट में भिजली का तार तुटकर सर्ट पर गिरा हूँआ है, बहुत खट्रा है",
+        "asr_seconds": 9.98,
+        "language_ok": true,
+        "department_ok": true,
+        "locality_ok": true,
+        "urgency": "critical"
+      },
+      {
+        "clip": "hi_no_water_dilsukhnagar.wav",
+        "heard": "दिल सुपनगर में चार दिन से पानी नहीं आया है, क्रित्या जल्दी कारेवाही करें",
+        "asr_seconds": 14.39,
+        "language_ok": true,
+        "department_ok": true,
+        "locality_ok": true,
+        "urgency": "high"
+      },
+      {
+        "clip": "en_dog_bite_gachibowli.wav",
+        "heard": "A stray dog bit a small child near the bus stop in Gachibowli. Please send help.",
+        "asr_seconds": 9.72,
+        "language_ok": true,
+        "department_ok": true,
+        "locality_ok": true,
+        "urgency": "critical"
+      },
+      {
+        "clip": "en_garbage_charminar.wav",
+        "heard": "Garbage has not been collected near Charminna for a week and the whole street stinks.",
+        "asr_seconds": 13.48,
+        "language_ok": true,
+        "department_ok": true,
+        "locality_ok": true,
+        "urgency": "high"
+      },
+      {
+        "clip": "te_sewage_kukatpally.wav",
+        "heard": "కూకట్పల్లి బస్టాప్ దగ్గర డ్రైనేజీ పొంగి రోడ్డు మీద మురుగు నీరు ప్రవహిస్తోంది",
+        "asr_seconds": 31.6,
+        "language_ok": true,
+        "department_ok": true,
+        "locality_ok": true,
+        "urgency": "high"
+      },
+      {
+        "clip": "te_live_wire_ameerpet.wav",
+        "heard": "అమీర్ పేటలో కరెంట్ తీగ రోడ్డు మీద పడిపోయింది చాలా ప్రమాదంగా ఉంది",
+        "asr_seconds": 10.34,
+        "language_ok": true,
+        "department_ok": true,
+        "locality_ok": true,
+        "urgency": "critical"
+      },
+      {
+        "clip": "te_no_water_dilsukhnagar.wav",
+        "heard": "దిల్ సుఖ్ నగర్ లో మూడు రోజులుగా నీళ్లు రావడం లేదు",
+        "asr_seconds": 7.18,
+        "language_ok": true,
+        "department_ok": true,
+        "locality_ok": true,
+        "urgency": "high"
+      },
+      {
+        "clip": "te_stray_dogs_gachibowli.wav",
+        "heard": "గచ్చిబౌలిలో వీధి కుక్కలు పిల్లలు వెంట పడుతున్నాయి",
+        "asr_seconds": 5.75,
+        "language_ok": true,
+        "department_ok": true,
+        "locality_ok": true,
+        "urgency": "high"
+      },
+      {
+        "clip": "te_garbage_charminar.wav",
+        "heard": "చార్మినార్ దగ్గర వారం రోజులుగా చెత్త తీయడం లేదు",
+        "asr_seconds": 5.67,
+        "language_ok": true,
+        "department_ok": true,
+        "locality_ok": true,
+        "urgency": "medium"
+      }
+    ]
+  },
+  "locality_accuracy": 1.0,
+  "dedup": {
+    "threshold": 0.83,
+    "synthetic_f1": 0.499,
+    "pairs": 778,
+    "text_only": {
+      "precision": 0.273,
+      "recall": 0.909,
+      "f1": 0.42
+    },
+    "text_plus_geo": {
+      "precision": 1.0,
+      "recall": 0.909,
+      "f1": 0.952
+    },
+    "cross_language_recall": 0.909
+  },
+  "committee": {
+    "main_model": "muril",
+    "second_opinions": [
+      "tfidf",
+      "embed"
+    ],
+    "complaints": 120,
+    "asked_citizen": 24,
+    "asked_rate": 0.2,
+    "accuracy_when_confident": 1.0,
+    "correct_option_offered_when_asked": 0.958,
+    "main_model_accuracy": 0.933,
+    "routing_accuracy_with_one_tap": 0.992
+  }
+}

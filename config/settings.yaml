@@ -1,0 +1,34 @@
+# Runtime settings. Every pipeline stage is pluggable — swap a backend here.
+city: hyderabad
+
+asr:
+  backend: hf                  # hf (transformers Whisper) | faster_whisper (CTranslate2, faster on CPU)
+  model: openai/whisper-small  # default model; also identifies the spoken language when none is given
+  # Per-language models. Base Whisper-small writes Telugu speech in Devanagari or loops; a Telugu
+  # fine-tune fixes it. Add e.g. `ur: {model: <urdu-whisper>}` the same way.
+  overrides:
+    te: {model: vasista22/whisper-telugu-small}
+
+classifier:
+  backend: auto                # auto | tfidf | embed | ensemble | muril  (auto = best model found in models/)
+
+embedder:
+  model: intfloat/multilingual-e5-small
+
+dedup:
+  radius_km: 1.5               # same issue must be this close to count as a duplicate
+  window_days: 30
+  similarity: 0.83             # cosine threshold on e5 embeddings (calibrated in scripts/train.py)
+
+hotspots:
+  eps_km: 0.8
+  min_reports: 4
+
+db_path: data/awaaz.db
+
+spikes:                        # early-warning alerts on the officer dashboard
+  window_hours: 48             # "recent" period
+  baseline_days: 14            # usual rate is measured over this period before it
+  min_reports: 3
+  ratio: 3                     # alert when the recent daily rate is this many times the usual one
+  floor_per_day: 0.1           # usual rate never counts as lower than this (avoids divide-by-zero alarms)
