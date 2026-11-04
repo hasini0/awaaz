@@ -3,6 +3,7 @@
     streamlit run app.py
 """
 import threading
+from pathlib import Path
 
 import streamlit as st
 
@@ -29,8 +30,10 @@ def get_engine() -> Awaaz:
 
 @st.cache_resource
 def preload_speech_models():
-    """Speech models load in the background while people read or type, instead of on the first voice note."""
-    threading.Thread(target=asr.preload, daemon=True).start()
+    """Speech models load in the background while people read or type, instead of on the first voice note.
+    Skipped on Streamlit Community Cloud (apps live under /mount/src), whose free memory can't hold them."""
+    if not Path("/mount/src").exists():
+        threading.Thread(target=asr.preload, daemon=True).start()
 
 
 def hero(engine: Awaaz) -> str:
